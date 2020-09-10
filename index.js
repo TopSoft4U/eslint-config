@@ -80,7 +80,7 @@ module.exports = {
     "func-style": "error",
     "no-alert": "error",
     "no-eval": "error",
-    'no-shadow': "off",
+    "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "no-undef": "error",
     "no-underscore-dangle": "error",
@@ -100,7 +100,7 @@ module.exports = {
     "unused-imports/no-unused-imports-ts": "error",
     "unused-imports/no-unused-vars-ts": [
       "warn",
-      { vars: "all", varsIgnorePattern: "^_", args: "after-used", argsIgnorePattern: "^_" },
+      {vars: "all", varsIgnorePattern: "^_", args: "after-used", argsIgnorePattern: "^_"},
     ],
     "no-var": "error",
     "object-shorthand": "error",
