@@ -1,17 +1,24 @@
 {
   "name": "@topsoft4u/eslint-config",
-  "version": "1.1.2",
+  "version": "1.0.1",
   "description": "ESLint and perhaps others in future",
   "main": "index.js",
   "files": [
     "index.js"
   ],
   "repository": "git://github.com/TopSoft4U/eslint-config.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "Łukasz Kolasa",
   "keywords": [
     "eslint",
     "eslint-config"
   ],
+  "scripts": {
+    "postversion": "yarn publish",
+    "postpublish": "git push --all origin -u && git push --tags origin"
+  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
