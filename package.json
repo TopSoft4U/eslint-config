@@ -1,7 +1,7 @@
 {
   "name": "@topsoft4u/eslint-config",
   "license": "UNLICENSED",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint and perhaps others in future",
   "main": "index.js",
   "files": [
@@ -17,7 +17,6 @@
     "eslint-config"
   ],
   "scripts": {
-    "postversion": "yarn publish",
     "postpublish": "git push --all origin -u && git push --tags origin"
   },
   "dependencies": {
@@ -36,7 +35,6 @@
     "eslint": "^7.8.1"
   },
   "devDependencies": {
-    "eslint": "^7.8.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1"
+    "eslint": "^7.8.1"
   }
 }
