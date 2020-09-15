@@ -6,7 +6,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-perf/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "env": {
     "browser": true,
@@ -36,7 +37,8 @@ module.exports = {
     "react-hooks",
     "react-perf",
     "simple-import-sort",
-    "unused-imports"
+    "unused-imports",
+    "jsx-a11y"
   ],
   "rules": {
     "semi": "error",
@@ -98,10 +100,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports-ts": "error",
-    "unused-imports/no-unused-vars-ts": [
-      "warn",
-      {vars: "all", varsIgnorePattern: "^_", args: "after-used", argsIgnorePattern: "^_"},
-    ],
+    "unused-imports/no-unused-vars-ts": "off",
     "no-var": "error",
     "object-shorthand": "error",
     "prefer-arrow-callback": "error",
