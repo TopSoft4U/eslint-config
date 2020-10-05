@@ -7,7 +7,10 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:react-perf/recommended",
     "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "env": {
     "browser": true,
@@ -36,7 +39,6 @@ module.exports = {
     "react",
     "react-hooks",
     "react-perf",
-    "simple-import-sort",
     "unused-imports",
     "jsx-a11y"
   ],
@@ -49,7 +51,8 @@ module.exports = {
         "avoidEscape": true
       }
     ],
-    "indent": ["error", 2],
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "no-multiple-empty-lines": ["warn", {"max": 1, "maxEOF": 1}],
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
@@ -79,6 +82,7 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "off",
     "eqeqeq": "error",
     "no-trailing-spaces": "warn",
+    "no-throw-literal": "error",
     "func-style": "error",
     "no-alert": "error",
     "no-eval": "error",
@@ -109,7 +113,6 @@ module.exports = {
     "react/no-render-return-value": "off",
     "react/jsx-fragments": "error",
     "react/no-danger": "error",
-    "simple-import-sort/sort": "error",
     "object-curly-spacing": [
       "error",
       "never"
@@ -128,7 +131,9 @@ module.exports = {
       {
         "allowComments": true
       }
-    ]
+    ],
+    "import/no-unresolved": "off",
+    "import/order": "error",
   },
   "overrides": [
     {
