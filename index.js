@@ -132,6 +132,7 @@ module.exports = {
         "allowComments": true
       }
     ],
+    "import/named": "off",
     "import/no-unresolved": "off",
     "import/order": "error",
   },
