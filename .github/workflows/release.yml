@@ -1,9 +1,6 @@
 name: Version create
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   publish:
@@ -35,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+#           tag_name: ${{ github.ref }}
+#           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
