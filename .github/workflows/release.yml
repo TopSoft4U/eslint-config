@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com
+          always-auth: true
+          scope: '@topsoft4u'
 
       - name: Publish to the npm registry
         run: yarn publish --patch
