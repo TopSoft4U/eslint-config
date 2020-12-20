@@ -1,6 +1,12 @@
 name: Version create
 
-on: [push]
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
 
 jobs:
   publish:
@@ -16,12 +22,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com
-          always-auth: true
           scope: "@topsoft4u"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish to the npm registry
+      - name: Publish to the GitHub registry
         run: yarn publish --patch
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
