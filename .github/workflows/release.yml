@@ -19,8 +19,6 @@ jobs:
 
       - name: Publish to the npm registry
         run: yarn publish --patch
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   release:
     needs: publish
     name: Create Release
