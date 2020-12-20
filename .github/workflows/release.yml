@@ -35,6 +35,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to the GitHub registry
-        run: yarn publish --patch
+        run: yarn version --patch
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
