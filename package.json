@@ -1,5 +1,6 @@
 {
   "name": "@topsoft4u/eslint-config",
+  "private": true,
   "license": "UNLICENSED",
   "version": "1.0.16",
   "description": "ESLint and perhaps others in future",
@@ -17,21 +18,22 @@
     "eslint-config"
   ],
   "scripts": {
+    "deps:check": "npx npm-check-updates --dep prod,dev,optional",
+    "deps:update": "npx npm-check-updates --dep prod,dev,optional -u",
     "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push"
   },
   "peerDependencies": {
-    "eslint": "^7.9.0"
+    "eslint": "^7.16.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.8.2",
-    "@typescript-eslint/parser": "^4.8.2",
-    "eslint": "^7.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-perf": "^3.3.0",
-    "eslint-plugin-unused-imports": "^1.0.0"
+    "eslint-plugin-unused-imports": "^1.0.1"
   }
 }
