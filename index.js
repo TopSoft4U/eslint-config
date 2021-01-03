@@ -89,7 +89,7 @@ module.exports = {
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "no-undef": "error",
-    "no-underscore-dangle": "error",
+    "no-underscore-dangle": "off",
     "react/jsx-tag-spacing": [
       "error",
       {
