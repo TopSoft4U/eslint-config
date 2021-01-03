@@ -1,7 +1,7 @@
 {
   "name": "@topsoft4u/eslint-config",
   "license": "UNLICENSED",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "ESLint and perhaps others in future",
   "main": "index.js",
   "files": [
