@@ -26,8 +26,7 @@ module.exports = {
   },
   "settings": {
     "react": {
-      "version": "detect",
-      "pragma": "h"
+      "version": "detect"
     }
   },
   "globals": {
