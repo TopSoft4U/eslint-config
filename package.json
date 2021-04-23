@@ -1,38 +1,53 @@
 {
   "name": "@topsoft4u/eslint-config",
-  "license": "UNLICENSED",
-  "version": "1.0.22",
   "description": "ESLint and perhaps others in future",
+  "version": "1.0.22",
   "main": "index.js",
   "files": [
     "index.js"
   ],
-  "repository": "git://github.com/TopSoft4U/eslint-config.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "repository": "https://github.com/TopSoft4U/eslint-config",
+  "homepage": "https://github.com/TopSoft4U/eslint-config",
+  "bugs": {
+    "url": "https://github.com/TopSoft4U/eslint-config/issues"
   },
-  "author": "Łukasz Kolasa",
+  "license": "MIT",
   "keywords": [
+    "TopSoft4U",
     "eslint",
     "eslint-config"
   ],
+  "author": {
+    "name": "Łukasz Kolasa",
+    "email": "lukasz.kolasa@topsoft4u.com",
+    "url": "https://topsoft4u.com/"
+  },
+  "contributors": [
+    {
+      "name": "Łukasz Kolasa",
+      "email": "lukasz.kolasa@topsoft4u.com",
+      "url": "https://topsoft4u.com/"
+    }
+  ],
   "scripts": {
-    "deps:check": "npx npm-check-updates --dep prod,dev,optional",
-    "deps:update": "npx npm-check-updates --dep prod,dev,optional -u",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push"
+    "deps:check": "npm-check-updates --dep prod,dev,optional",
+    "deps:update": "npm-check-updates --dep prod,dev,optional -u"
+  },
+  "devDependencies": {
+    "npm-check-updates": "^11.5.1"
   },
   "peerDependencies": {
     "eslint": "^7.16.0"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.16.1",
-    "@typescript-eslint/parser": "^4.16.1",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-json": "^2.1.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-perf": "^3.3.0",
-    "eslint-plugin-unused-imports": "^1.1.0"
+    "eslint-plugin-unused-imports": "^1.1.1"
   }
 }
