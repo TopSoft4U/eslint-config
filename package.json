@@ -30,6 +30,7 @@
     }
   ],
   "scripts": {
+    "clean": "rimraf --no-glob ./dist",
     "deps:check": "npm-check-updates --dep prod,dev,optional",
     "deps:update": "npm-check-updates --dep prod,dev,optional -u"
   },
