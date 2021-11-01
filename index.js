@@ -53,6 +53,7 @@ module.exports = {
       }
     ],
     "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/no-onchange": "off",
     "indent": ["error", 2, {"SwitchCase": 1}],
     "no-multiple-empty-lines": ["warn", {"max": 1, "maxEOF": 1}],
     "react/prop-types": "off",
