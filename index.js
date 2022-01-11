@@ -10,7 +10,9 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    // Must be last
+    "prettier",
   ],
   "env": {
     "browser": true,
@@ -54,7 +56,6 @@ module.exports = {
     ],
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/no-onchange": "off",
-    "indent": ["error", 2, {"SwitchCase": 1}],
     "no-multiple-empty-lines": ["warn", {"max": 1, "maxEOF": 1}],
     "react/prop-types": "off",
     "react/display-name": "off",
@@ -115,7 +116,7 @@ module.exports = {
     "prefer-template": "error",
     "react/no-render-return-value": "off",
     "react/jsx-fragments": "error",
-    "react/no-danger": "error",
+    "react/no-danger": "off",
     "object-curly-spacing": [
       "error",
       "never"
