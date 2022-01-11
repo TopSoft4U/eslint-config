@@ -1,7 +1,7 @@
 {
   "name": "@topsoft4u/eslint-config",
   "description": "ESLint and perhaps others in future",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "main": "index.js",
   "files": [
     "index.js"
@@ -43,13 +43,13 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-perf": "^3.3.1",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "eslint-config-prettier": "^8.3.0"
+    "eslint-plugin-unused-imports": "^2.0.0"
   }
 }
